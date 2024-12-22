@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELITE - Event Company</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <nav class="bg-black shadow-md">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo -->
+        <a href="index.html" class="text-2xl font-bold text-yellow-400">ELITE</a>
+  
+        <!-- Menu Toggle (Mobile) -->
+        <button 
+          id="menu-toggle" 
+          class="text-gray-600 hover:text-blue-600 focus:outline-none md:hidden"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+  
+        <!-- Menu Items -->
+        <div id="menu" class="hidden md:flex space-x-6">
+          <a href="login.html" class="text-white hover:text-yellow-400 transition">HOME</a>
+          <a href="index.html" class="text-white hover:text-yellow-400 transition">ABOUT</a>
+          <a href="about.html" class="text-white hover:text-yellow-400  transition">SERVICES</a>
+          <a href="services.html" class="text-white hover:text-yellow-400  transition">CONTACT</a>
+        </div>
+      </div>
+  
+      <!-- Dropdown Menu (Mobile) -->
+      <div id="dropdown-menu" class="hidden flex-col md:hidden space-y-2 bg-black rounded-md shadow-md px-4 py-2">
+        <a href="index.html" class="block text-white hover:text-yellow-400 transition">HOME</a>
+        <a href="about.html" class="block text-white hover:text-yellow-400 transition">ABOUT</a>
+        <a href="services.html" class="block text-white hover:text-yellow-400 transition">SERVICES</a>
+        <a href="getintouch.html" class="block text-white hover:text-yellow-400 transition">CONTACT</a>
+      </div>
+    </div>
+  </nav>
+  <script>
+    // Navbar toggle functionality
+    const menuToggle = document.getElementById('menu-toggle');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+  
+    menuToggle.addEventListener('click', () => {
+      dropdownMenu.classList.toggle('hidden');
+      dropdownMenu.classList.toggle('flex');
+    });
+  </script>
+  
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center h-screen"
+    style="background-image: url('https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/295924479/original/c5d65db40742f2fc6f088f28d5cfe4be80776f58/render-4k-realistic-3d-wedding-decoration-and-events-design.jpg');">
+    <div class="absolute inset-0 "></div>
+    <div class="relative z-10 flex flex-col items-center justify-center text-center h-full text-white">
+      <h1 class="text-4xl md:text-6xl font-bold">Seal Your Date </h1>
+      <h2 class="text-4xl md:text-6xl font-bold text-yello-500">with Fate</h2>
+      <p class="mt-4 text-lg"></p>
+      <a href="#" class="mt-6 bg-yellow-500 text-black px-6 py-3 rounded-full hover:bg-yellow-600">
+        READ MORE
+      </a>
+    </div>
+  </section>
+
+        </div>
+  <!-- Main Container -->
+      <section class="bg-gray-100 py-24">
+          <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center"> 
+              <div class="order-2 md:order-1"> 
+                  <img src="https://th.bing.com/th/id/OIP._fiROmuimr5XT6Ts5tWk2gHaEn?w=620&h=387&rs=1&pid=ImgDetMain" alt="Segaro Event Image" class="w-full md:w-3/4" style="width: 700px;">
+              </div>
+              <div class="order-1 md:order-2 text-center md:text-left">
+                  <h1 class="text-4xl font-bold mb-4">We are the top players in the field</h1>
+                  <p class="text-lg mb-6">Specializing in the creation of exceptional events for private and corporate clients, we design, plan and manage every project from conception to execution.
+                    We are completely customized, reflecting the brand personality of each client. If you’re planning high-profile private parties, charitable events, or an off-the-charts wedding, look no further than Segaro Events. The team aims to deliver experiences that draw on your wildest imagination and make your big dreams come to life.
+                    </p>
+                  </p>
+              </div>
+          </div>
+      </section>
+
+      <!--  -->
+      <section class="bg-black	text-white py-24">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="order-2 md:order-1 ">
+            <img src="https://images.squarespace-cdn.com/content/v1/65989ceeb48dd7073adc3a37/cc1eedd8-79cc-4cf4-9d9a-bb8ec66db505/Your-White-Moments-Destination-Wedding-Photography-Santorini-Styleshoot-221.jpg?format=1500w" style="height: 600px; width: 450px; margin-left: 100px;" alt="" class="w-full md:w-3/4">
+          </div>
+          <div class="order-1 md:order-2 text-center md:text-left">
+            <h2 class="text-3xl font-bold mb-4"></h2>
+            <h1 class="text-4xl font-bold mb-4">Ensoul Events is a Wedding Planning and Event Design Studio dedicated to infusing every occasion with the soulful essence of intimate and meaningful experiences, striking a perfect balance between enduring substance and style</h1>
+            <p class="text-lg mb-6"></p>
+            <p class="text-lg">We believe that every couple is as unique as the individuals who make it up. When you choose us, we will delve into your souls to create that 'one and only' date for you.
+
+                From the inception of the idea to its realization, we will guide you step by step, ensuring that the planning process is stress-free, unique, and memorable. Collaborating with the most professional vendors, we have the capability to bring unparalleled events to life.
+                
+                Ensoul Events specializes in crafting high-end events with a refined artistic touch tailored to your personalities. Driven by a passion for design and an unwavering focus on every detail, we bring your desires to fruition.
+                
+                We guarantee an unforgettable, seamlessly orchestrated experience for you and your loved ones.
+                
+                "Learn the rules like a pro, so you can break them like an artist.".</p>
+          </div>
+        </div>
+      </section>
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- About Section -->
+        <div class="space-y-4">
+          <h3 class="text-xl font-semibold">About Us</h3>
+          <p class="text-gray-400">We specialize in creating unforgettable wedding experiences, tailored to your needs. Let us help you plan your perfect day.</p>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="space-y-4">
+          <h3 class="text-xl font-semibold">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#services" class="hover:text-yellow-400">Services</a></li>
+            <li><a href="#portfolio" class="hover:text-yellow-400">Portfolio</a></li>
+            <li><a href="#contact" class="hover:text-yellow-400">Contact Us</a></li>
+            <li><a href="#blog" class="hover:text-yellow-400">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="space-y-4">
+          <h3 class="text-xl font-semibold">Contact Us</h3>
+          <p class="text-gray-400">123 Wedding St, Kochi, India</p>
+          <p class="text-gray-400">Phone:8590294332</p>
+          <p class="text-gray-400">Email: elite@gmail.com</p>
+
+          <!-- Social Media Links -->
+          <div class="flex space-x-4 mt-4">
+            <a href="https://www.facebook.com/" class="text-pink-400 hover:text-pink-500">
+              <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/" class="text-pink-400 hover:text-pink-500">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://x.com/?lang=en" class="text-pink-400 hover:text-pink-500">
+              <i class="fab fa-twitter"></i> Twitter
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="mt-8 text-center text-gray-400">
+        <p>&copy; 2024 Elite est(2005).</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional: Add your scripts here -->
+  <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+
+  
+  </body>
+  </html>
